@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 10</title>
+    <style>
+        tr, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Phase 10
+    </h1>
+    <!--
+        oben input feld für Namen
+        bei jedem Name wird eine Spalte hinzugefügt
+        dann kann das Spiel gestartet werden mit einem Button und dann geht das Feld und Button weg
+        eingabefeld für Punkte
+        dadrunter ein Button, ob Phase gschafft wurde
+        evtl Zahl und Button in einem Feld (?)
+        dadrunter Feld, wo die Phase angezeigt wird
+        da drunter die Punktzahl, die immer zsm gerechnet wird
+        ganz unten ein Button für Reset
+        Reset evtl mit Bestätigung abfangen
+    -->
+    <input type="text" id="inputName" placeholder="name"> <button id="enterName">Enter name</button> <button id="startGame">Start game</button>
+    <br>
+    <br>
+    <br>
+    <table id="tableScore">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Frederik</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>New Score</td>
+                <td><input type="text" placeholder="number"></td>
+            </tr>
+            <tr>
+                <td>Phase</td>
+                <td>1 <input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Score</td>
+                <td>9999</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button id="enterRound">Enter round</button>
+
+    <br>
+    <br>
+
+    <button onclick="window.location.href = 'index.html';">Back to menu</button><br>
+
+    <script src="phase10.js"></script>
+
+</body>
+</html>
